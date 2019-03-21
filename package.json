@@ -23,6 +23,7 @@
     ]
   },
   "dependencies": {
+    "@babel/polyfill": "^7.4.0",
     "lint-staged": "^8.1.5",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
