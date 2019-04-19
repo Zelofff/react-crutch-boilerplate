@@ -11,10 +11,12 @@ const renderApp = () => {
   return { getByText }
 }
 
-test('render app without crashes', () => {
-  const text = 'Hello world'
-  const { getByText } = renderApp()
-  const container = getByText(text)
+describe('sample test', () => {
+  test('render app without crashes', () => {
+    const text = 'Hello world'
+    const { getByText } = renderApp()
+    const container = getByText(text)
 
-  expect(container).toBeInTheDocument()
+    expect(container).toBeInTheDocument()
+  })
 })
