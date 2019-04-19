@@ -11,7 +11,7 @@ const renderApp = () => {
   return { getByText }
 }
 
-describe('sample test', () => {
+describe('Sample test', () => {
   test('render app without crashes', () => {
     const text = 'Hello world'
     const { getByText } = renderApp()
