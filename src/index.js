@@ -6,4 +6,12 @@ import { App } from '@components/app'
 
 const root = document.getElementById('root')
 
-ReactDOM.render(<App />, root)
+if (process.env.NODE_ENV !== 'production') {
+  import('react-axe').then(axe => {
+    const reactAxe = axe.default
+    reactAxe(React, ReactDOM, 3000)
+    ReactDOM.render(<App />, root)
+  })
+} else {
+  ReactDOM.render(<App />, root)
+}
