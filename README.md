@@ -4,7 +4,5 @@ To use this boilerplate follow this steps:
 2. `cd <your_project_name>/`
 3. Skip this if you want simple config without HMR and without additional things for PWA
    - `git checkout hmr` (if you want only HMR)
-   - `git checkout pwa` (if you want PWA)
-   - `git checkout pwa-hmr` (if you want PWA with HMR)
 4. `rm -rf .git/`
 5. Create new repository on github
