@@ -6,5 +6,10 @@ module.exports = merge(base, {
   devtool: 'eval-source-map'
   devServer: {
     hot: true
+  },
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom'
+    }
   }
 })
