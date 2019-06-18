@@ -4,5 +4,5 @@ const CompressionPlugin = require('compression-webpack-plugin')
 
 module.exports = merge(base, {
   mode: 'production',
-  plugins: [new CompressionPlugin()]
+  plugins: [new CompressionPlugin({ test: /\.js(\?.*)?$/i })]
 })
