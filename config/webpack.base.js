@@ -29,7 +29,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
       template: './public/index.html',
-      filename: './index.html'
+      title: 'App template'
     })
   ]
 }
