@@ -1,11 +1,15 @@
 {
+  "env": {
+    "test": {
+      "plugins": ["@babel/plugin-transform-modules-commonjs"]
+    }
+  },
   "presets": [
     [
       "@babel/preset-env",
       {
         "targets": ["last 2 versions", "not dead", "not < 2%", "not ie 11"],
         "useBuiltIns": "usage",
-        "corejs": 3,
         "loose": true,
         "modules": false
       }
