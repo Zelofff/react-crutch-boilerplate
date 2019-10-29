@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist/",
+    "paths": {
+      "@components/*": ["./src/components/*"]
+    },
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react"
+  }
+}

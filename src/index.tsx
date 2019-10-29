@@ -8,6 +8,7 @@ const root = document.getElementById('root')
 if (process.env.NODE_ENV !== 'production') {
   import('react-axe').then(axe => {
     const reactAxe = axe.default
+    //@ts-ignore
     reactAxe(React, ReactDOM, 3000)
     ReactDOM.render(<App />, root)
   })
