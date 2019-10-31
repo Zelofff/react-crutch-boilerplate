@@ -30,7 +30,6 @@
     ]
   },
   "dependencies": {
-    "@babel/polyfill": "^7.6.0",
     "@hot-loader/react-dom": "^16.10.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
@@ -38,19 +37,12 @@
   },
   "devDependencies": {
     "@arkweid/lefthook": "^0.6.3",
-    "@babel/core": "^7.6.4",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
     "@testing-library/jest-dom": "^4.2.0",
     "@testing-library/react": "^9.3.0",
     "@types/jest": "^24.0.20",
     "@types/react": "^16.9.11",
     "@types/react-axe": "^3.1.0",
     "@types/react-dom": "^16.9.3",
-    "babel-eslint": "^10.0.3",
-    "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "compression-webpack-plugin": "^3.0.0",
     "eslint": "^6.6.0",
