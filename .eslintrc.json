@@ -1,5 +1,5 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
   "env": {
     "browser": true,
     "es6": true,
@@ -7,9 +7,11 @@
     "jest/globals": true
   },
   "extends": [
-    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
     "plugin:react/recommended",
-    "plugin:jsx-a11y/strict"
+    "plugin:jsx-a11y/strict",
+    "plugin:prettier/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -32,6 +34,8 @@
     "react-hooks/exhaustive-deps": "warn",
     "prettier/prettier": "error",
     "react/prop-types": "off",
-    "no-case-declarations": "off"
+    "no-case-declarations": "off",
+    "@typescript-eslint/no-var-requires": "warn",
+    "@typescript-eslint/ban-ts-ignore": "warn"
   }
 }
