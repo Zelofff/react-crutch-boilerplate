@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, '../dist')
+    path: path.resolve(__dirname, '../dist'),
   },
   module: {
     rules: [
@@ -15,23 +15,23 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'ts-loader'
-          }
-        ]
-      }
-    ]
+            loader: 'ts-loader',
+          },
+        ],
+      },
+    ],
   },
   resolve: {
     alias: {
-      '@components': path.resolve(__dirname, '../src/components/')
+      '@components': path.resolve(__dirname, '../src/components/'),
     },
-    extensions: ['.js', '.ts', '.tsx']
+    extensions: ['.js', '.ts', '.tsx'],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
       template: './public/index.html',
-      title: 'App template'
-    })
-  ]
+      title: 'App template',
+    }),
+  ],
 }
